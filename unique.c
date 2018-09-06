@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
 
@@ -7,7 +6,7 @@ void push(int array[], int *index, int value) {
     *index = *index + 1;
 }
 
-int unique(int array[], int size) {
+int *unique(int array[], int size) {
     int *output = malloc(size * sizeof(int));
     int output_index = 0;
     int current_value;
@@ -28,5 +27,5 @@ int unique(int array[], int size) {
         }
     }
 
-    return *output;
+    return output;
 }
