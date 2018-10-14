@@ -1,7 +1,7 @@
 .SILENT:
 
 compile:
-	gcc -c unique.c
+	gcc -Wall -std=c99 -c unique.c
 	gcc -o test test.c unique.o
 
 run_test: compile
